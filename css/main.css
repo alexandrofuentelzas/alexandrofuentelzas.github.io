@@ -68,6 +68,16 @@
  *
  * ------------------------------------------------------------------- */
 
+ .additionalcomments {
+   font-family: "montserrat-medium", sans-serif;
+     margin-top: 70px;
+     margin-left: 100;
+     margin-right: 100;
+     font-size: 18px;
+     line-height: 40px;
+     color: #0D0A0B;
+ }
+
 html {
     font-size: 10px;
 }

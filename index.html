@@ -21,7 +21,7 @@
     ================================================== -->
     <meta charset="utf-8">
     <!--<title>Hola</title>-->
-    <meta name="description" content="">
+    <meta name="description" content=" Hello there! My name is Alex and I am an aspiring developer and passionate programmer.">
     <meta name="author" content="">
 
     <!-- mobile specific metas
@@ -45,6 +45,22 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
+
+<!-- *** Snippet Box *** -->
+<table cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td>
+<!--Use description meta tag, if non-empty, in place of snippet-->
+    <xsl:choose>
+      <xsl:when test="MT/@N='description' and MT/@V!=''">
+        <xsl:value-of select="MT[@N = 'description']/@V"/>
+      </xsl:when>
+      <xsl:otherwise>
+          <xsl:call-template name="reformat_keyword">
+            <xsl:with-param name="orig_string" select="S"/>
+          </xsl:call-template>
+      </xsl:otherwise>
+    </xsl:choose>
 
 <body id="top">
 
@@ -247,6 +263,24 @@
                             <p class="timeline__timeframe">August 18' - Present</p>
                             <h3>Software Development Club, George Mason University</h3>
                             <h5>Co-founder/Developer - Helping over 35 students grow a passion for software development. Learning new technologies by working on projects and attending hackathons.</h5>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>.</p>
+                        </div>
+                    </div> <!-- end timeline__block -->
+                </div> <!-- end timeline -->
+            </div> <!-- end right -->
+
+
+            <div class="col-six tab-full right">
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <p class="timeline__timeframe">February 19' - February 19'</p>
+                            <h3>Georgetown University - HoyaHacks</h3>
+                            <h5>Developer - Created a platform that can detect guns and inform the authorities before any casualties occur. Once a gun is detected, the local authorities are informed and an image of the suspect, their geolocaton, and their face are revealed to the general public and civilians are advised to seek safety through text.</h5>
                         </div>
                         <div class="timeline__desc">
                             <p>.</p>

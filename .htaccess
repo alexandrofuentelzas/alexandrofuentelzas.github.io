@@ -2,6 +2,6 @@ RewriteEngine on
 DirectoryIndex index.html
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteCond %{THE_REQUEST} /index.html HTTP [NC]
+RewriteCond %{THE_REQUEST}\index.html HTTP [NC]
 RewriteRule ^(.*)$ $index.html [R=301,L]
 RewriteRule ^(.*)$ $1.html [NC,L]
